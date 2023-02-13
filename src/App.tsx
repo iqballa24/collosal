@@ -1,7 +1,8 @@
 import React from 'react';
+import { AuthorCard } from '@/component/UI/molecules';
 
 function App() {
-  return <h1 className='text-red-500'>Hello world</h1>;
+  return <AuthorCard />;
 }
 
 export default App;
