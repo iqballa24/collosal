@@ -13,6 +13,9 @@ import TrendingUp from '@/component/UI/atoms/Icon/TrendingUp';
 import SmartPhone from '@/component/UI/atoms/Icon/SmartPhone';
 import Globe from '@/component/UI/atoms/Icon/Globe';
 import QuoteBadge from '@/component/UI/atoms/Icon/QuoteBadge';
+import CircleTwitter from '@/component/UI/atoms/Icon/CircleTwitter';
+import CircleFacebook from '@/component/UI/atoms/Icon/CircleFacebook';
+import CircleLinkedin from '@/component/UI/atoms/Icon/CircleLinkedin';
 
 export {
   SquareFigma,
@@ -29,5 +32,8 @@ export {
   TrendingUp,
   SmartPhone,
   Globe,
-  QuoteBadge
+  QuoteBadge,
+  CircleTwitter,
+  CircleFacebook,
+  CircleLinkedin,
 };

@@ -6,6 +6,7 @@ import ItemIcon from '@/component/UI/molecules/ItemIcon';
 import LabelIcon from '@/component/UI/molecules/LabelIcon';
 import CardIcon from '@/component/UI/molecules/CardIcon';
 import AuthorCard from '@/component/UI/molecules/AuthorCard';
+import Socials from '@/component/UI/molecules/Socials';
 
 export {
   FeatureCard,
@@ -16,4 +17,5 @@ export {
   LabelIcon,
   CardIcon,
   AuthorCard,
+  Socials
 };
