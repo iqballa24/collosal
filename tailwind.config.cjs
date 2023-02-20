@@ -24,7 +24,10 @@ module.exports = {
         red: '#FC165B',
         dark: '#0B0B22',
         highlight: '#221048',
-        muted: 'rgba(255, 255, 255, 0.6)'
+        muted: 'rgba(255, 255, 255, 0.6)',
+        purple: '#3F2379',
+        mazarine: '#233679',
+        byzantium: '#792366',
       },
     },
   },

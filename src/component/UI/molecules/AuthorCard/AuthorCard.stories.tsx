@@ -2,7 +2,7 @@ import React from 'react';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 
 import AuthorCard from '.';
-import data from '@/constant';
+import DATA from '@/constant';
 
 export default {
   title: 'Molecules/AuthorCard',
@@ -16,5 +16,5 @@ const Template: ComponentStory<typeof AuthorCard> = (args) => (
 export const Default = Template.bind({});
 
 Default.args = {
-  user: data.user,
+  user: DATA.DATA_USER.user,
 };

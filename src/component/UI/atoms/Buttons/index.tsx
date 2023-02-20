@@ -7,10 +7,11 @@ const Buttons: React.FC<ButtonProps> = ({
   color,
   style,
   isRounded,
+  isFull,
   label,
   onClick,
 }) => {
-  const CLASSNAME: string[] = ['max-h-[52px] transition-all'];
+  const CLASSNAME: string[] = ['max-h-[52px] transition-all whitespace-nowrap'];
 
   switch (size) {
     case 'small':
@@ -28,10 +29,14 @@ const Buttons: React.FC<ButtonProps> = ({
           CLASSNAME.push('bg-primary text-white hover:brightness-90');
           break;
         case 'light':
-          CLASSNAME.push('bg-primary bg-opacity-10 text-white hover:brightness-90');
+          CLASSNAME.push(
+            'bg-primary bg-opacity-10 text-white hover:brightness-90'
+          );
           break;
         case 'outline':
-          CLASSNAME.push('bg-transparant border border-primary text-primary hover:bg-primary hover:text-white');
+          CLASSNAME.push(
+            'bg-transparant border border-primary text-primary hover:bg-primary hover:text-white'
+          );
           break;
       }
 
@@ -42,16 +47,21 @@ const Buttons: React.FC<ButtonProps> = ({
           CLASSNAME.push('bg-white text-dark hover:brightness-90');
           break;
         case 'light':
-          CLASSNAME.push('bg-white bg-opacity-10 text-white hover:brightness-90');
+          CLASSNAME.push(
+            'bg-white bg-opacity-10 text-white hover:brightness-90'
+          );
           break;
         case 'outline':
-          CLASSNAME.push('bg-transparant border border-white text-white hover:bg-white hover:text-primary');
+          CLASSNAME.push(
+            'bg-transparant border border-white text-white hover:bg-white hover:text-dark'
+          );
           break;
       }
       break;
   }
 
   CLASSNAME.push(isRounded ? 'rounded-full' : 'rounded');
+  CLASSNAME.push(isFull ? 'w-full' : 'w-fit');
 
   return (
     <button type={type} className={CLASSNAME.join(' ')} onClick={onClick}>

@@ -1,21 +1,27 @@
-import React from 'react';
-import { AuthorCard } from '@/component/UI/molecules';
+import React, { useEffect } from 'react';
+import { Route, Routes } from 'react-router-dom';
 
-const data = {
-  avatar: 'https://ui-avatars.com/api/?name=Iqbal+Nugraha',
-  name: 'Iqbal Nugraha',
-  job: 'Frontend developer',
-  socials: {
-    linkedin: 'linkedin.com',
-    facebook: 'facebook.com',
-    twitter: 'twitter.com',
-  },
-  description:
-    'Night subdue their morning created every light earth very darkness they`re you`re deep female. Tree sixth divided greater, midst earth forth won`t for moved.',
-};
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+import Layout from '@/component/Layout';
+import Home from '@/pages/Home';
 
 function App() {
-  return <AuthorCard user={data} />;
+  useEffect(() => {
+    AOS.init({ duration: 600 });
+  }, []);
+  return (
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<Home />} />
+        <Route path="/services" element={<Home />} />
+        <Route path="/how-we-work" element={<Home />} />
+        <Route path="/projects" element={<Home />} />
+        <Route path="/about" element={<Home />} />
+      </Route>
+    </Routes>
+  );
 }
 
 export default App;

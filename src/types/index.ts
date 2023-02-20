@@ -5,6 +5,7 @@ export type ButtonProps = {
   color: 'primary' | 'white';
   style: 'light' | 'solid' | 'outline';
   isRounded?: boolean;
+  isFull?: boolean;
   onClick: () => void;
 };
 
@@ -25,5 +26,19 @@ export type userTypes = {
   name: string;
   job: string;
   socials: socialsTypes;
+  description: string;
+};
+
+export type PricingCardTypes = {
+  title: string;
+  price: number;
+  benefits: string[];
+  type: 'low' | 'medium' | 'high';
+};
+
+export type TestimonialCardTypes = {
+  image: string;
+  name: string;
+  company: string;
   description: string;
 };

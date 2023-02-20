@@ -1,0 +1,25 @@
+.swiper {
+  @apply w-full px-10 lg:px-52 xl:px-96 h-full pb-[75px];
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 31px;
+  @apply flex justify-center items-center text-center text-lg;
+}
+
+.swiper-slide-active {
+  @apply border-2 border-primary mb-0 -translate-y-10  !important;
+}
+
+.swiper-pagination-bullet {
+  @apply bg-white bg-opacity-20 w-4 h-4 !important;
+}
+
+.swiper-pagination-bullet-active {
+  @apply bg-white !important;
+}

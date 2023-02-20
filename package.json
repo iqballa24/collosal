@@ -19,8 +19,11 @@
   },
   "dependencies": {
     "@headlessui/react": "^1.7.11",
+    "aos": "^2.3.4",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.7.1",
+    "swiper": "^9.0.5"
   },
   "devDependencies": {
     "@babel/core": "^7.20.12",
@@ -34,6 +37,7 @@
     "@storybook/builder-vite": "^0.4.1",
     "@storybook/react": "^6.5.16",
     "@storybook/testing-library": "^0.0.13",
+    "@types/aos": "^3.0.4",
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
     "@vitejs/plugin-react-swc": "^3.0.0",
