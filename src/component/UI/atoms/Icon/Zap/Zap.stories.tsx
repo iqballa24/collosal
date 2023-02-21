@@ -9,6 +9,6 @@ export default {
   component: Zap,
 } as ComponentMeta<typeof Zap>;
 
-const Template: ComponentStory<typeof Zap> = (args) => <Zap />;
+const Template: ComponentStory<typeof Zap> = () => <Zap />;
 
 export const ZapIcon = Template.bind({});

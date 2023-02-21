@@ -9,6 +9,6 @@ export default {
   component: SquareMail,
 } as ComponentMeta<typeof SquareMail>;
 
-const Template: ComponentStory<typeof SquareMail> = (args) => <SquareMail />;
+const Template: ComponentStory<typeof SquareMail> = () => <SquareMail />;
 
 export const SquareMailIcon = Template.bind({});

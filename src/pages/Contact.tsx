@@ -1,5 +1,4 @@
 import { SquareMail, SquarePhoneCall } from '@/component/UI/atoms/Icon';
-import { SquareMailIcon } from '@/component/UI/atoms/Icon/SquareMail/SquareMail.stories';
 import { ItemIcon, PageHeader } from '@/component/UI/molecules';
 import { Form } from '@/component/UI/organisms';
 import React from 'react';

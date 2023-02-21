@@ -9,6 +9,6 @@ export default {
   component: QuoteBadge,
 } as ComponentMeta<typeof QuoteBadge>;
 
-const Template: ComponentStory<typeof QuoteBadge> = (args) => <QuoteBadge />;
+const Template: ComponentStory<typeof QuoteBadge> = () => <QuoteBadge />;
 
 export const QuoteBadgeIcon = Template.bind({});

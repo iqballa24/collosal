@@ -9,6 +9,6 @@ export default {
   component: Monitor,
 } as ComponentMeta<typeof Monitor>;
 
-const Template: ComponentStory<typeof Monitor> = (args) => <Monitor />;
+const Template: ComponentStory<typeof Monitor> = () => <Monitor />;
 
 export const MonitorIcon = Template.bind({});

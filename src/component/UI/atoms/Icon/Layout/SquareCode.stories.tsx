@@ -9,6 +9,6 @@ export default {
   component: Layout,
 } as ComponentMeta<typeof Layout>;
 
-const Template: ComponentStory<typeof Layout> = (args) => <Layout />;
+const Template: ComponentStory<typeof Layout> = () => <Layout />;
 
 export const LayoutIcon = Template.bind({});

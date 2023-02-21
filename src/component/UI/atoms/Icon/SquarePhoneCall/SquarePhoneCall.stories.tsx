@@ -9,6 +9,6 @@ export default {
   component: SquarePhoneCall,
 } as ComponentMeta<typeof SquarePhoneCall>;
 
-const Template: ComponentStory<typeof SquarePhoneCall> = (args) => <SquarePhoneCall />;
+const Template: ComponentStory<typeof SquarePhoneCall> = () => <SquarePhoneCall />;
 
 export const SquarePhoneCallIcon = Template.bind({});

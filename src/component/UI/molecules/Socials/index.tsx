@@ -9,11 +9,17 @@ import { socialsTypes } from '@/types';
 const Socials: React.FC<socialsTypes> = ({ linkedin, facebook, twitter }) => {
   return (
     <div className="flex flex-row gap-[10px]">
-      <CircleTwitter src={twitter} />
-      <CircleFacebook src={facebook} />
-      <CircleLinkedin src={linkedin} />
+      <a href={linkedin} target="_blank" rel="noreferrer">
+        <CircleTwitter />
+      </a>
+      <a href={facebook} target="_blank" rel="noreferrer">
+        <CircleFacebook />
+      </a>
+      <a href={twitter} target="_blank" rel="noreferrer">
+        <CircleLinkedin />
+      </a>
     </div>
   );
 };
 
-export default Socials;
+export default React.memo(Socials);

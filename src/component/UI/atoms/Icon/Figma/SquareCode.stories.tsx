@@ -9,6 +9,6 @@ export default {
   component: Figma,
 } as ComponentMeta<typeof Figma>;
 
-const Template: ComponentStory<typeof Figma> = (args) => <Figma />;
+const Template: ComponentStory<typeof Figma> = () => <Figma />;
 
 export const FigmaIcon = Template.bind({});

@@ -9,6 +9,6 @@ export default {
   component: SquareGlobe,
 } as ComponentMeta<typeof SquareGlobe>;
 
-const Template: ComponentStory<typeof SquareGlobe> = (args) => <SquareGlobe />;
+const Template: ComponentStory<typeof SquareGlobe> = () => <SquareGlobe />;
 
 export const SquareGlobeIcon = Template.bind({});

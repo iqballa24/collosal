@@ -9,6 +9,6 @@ export default {
   component: CircleLinkedin,
 } as ComponentMeta<typeof CircleLinkedin>;
 
-const Template: ComponentStory<typeof CircleLinkedin> = (args) => <CircleLinkedin />;
+const Template: ComponentStory<typeof CircleLinkedin> = () => <CircleLinkedin />;
 
 export const CircleLinkedinIcon = Template.bind({});

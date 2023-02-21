@@ -9,6 +9,6 @@ export default {
   component: Code,
 } as ComponentMeta<typeof Code>;
 
-const Template: ComponentStory<typeof Code> = (args) => <Code />;
+const Template: ComponentStory<typeof Code> = () => <Code />;
 
 export const CodeIcon = Template.bind({});

@@ -9,6 +9,6 @@ export default {
   component: TrendingUp,
 } as ComponentMeta<typeof TrendingUp>;
 
-const Template: ComponentStory<typeof TrendingUp> = (args) => <TrendingUp />;
+const Template: ComponentStory<typeof TrendingUp> = () => <TrendingUp />;
 
 export const TrendingUpIcon = Template.bind({});

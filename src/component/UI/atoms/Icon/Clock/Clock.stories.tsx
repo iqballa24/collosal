@@ -9,6 +9,6 @@ export default {
   component: Clock,
 } as ComponentMeta<typeof Clock>;
 
-const Template: ComponentStory<typeof Clock> = (args) => <Clock />;
+const Template: ComponentStory<typeof Clock> = () => <Clock />;
 
 export const ClockIcon = Template.bind({});

@@ -9,6 +9,6 @@ export default {
   component: SmartPhone,
 } as ComponentMeta<typeof SmartPhone>;
 
-const Template: ComponentStory<typeof SmartPhone> = (args) =>  <SmartPhone />;
+const Template: ComponentStory<typeof SmartPhone> = () =>  <SmartPhone />;
 
 export const SmartPhoneIcon = Template.bind({});
