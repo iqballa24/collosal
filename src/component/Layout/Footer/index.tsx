@@ -35,42 +35,42 @@ const Footer = () => {
         </div>
       </div>
       <div className=" flex flex-col gap-[19px]">
-        <h4 className="text-white text-sm font-medium">SERVICES</h4>
+        <h4 className="text-white text-sm font-medium">COMPANY</h4>
         <div className="flex flex-col gap-[10px]">
           <Link className="text-muted hover:text-white" to="/">
-            Web Development
+            About
+          </Link>
+          <Link className="text-muted hover:text-white" to="/contact">
+            Contact
+          </Link>
+          <Link className="text-muted hover:text-white" to="/send-quote">
+            Send Quote
           </Link>
           <Link className="text-muted hover:text-white" to="/">
-            App Development
+            Privacy Police
           </Link>
           <Link className="text-muted hover:text-white" to="/">
-            UI Design
+            Term of Service
           </Link>
           <Link className="text-muted hover:text-white" to="/">
-            Consultation
-          </Link>
-          <Link className="text-muted hover:text-white" to="/">
-            Maintenance
+            Jobs
           </Link>
         </div>
       </div>
       <div className=" flex flex-col gap-[19px]">
-        <h4 className="text-white text-sm font-medium">SERVICES</h4>
+        <h4 className="text-white text-sm font-medium">RESOURCES</h4>
         <div className="flex flex-col gap-[10px]">
           <Link className="text-muted hover:text-white" to="/">
-            Web Development
+            Support
           </Link>
           <Link className="text-muted hover:text-white" to="/">
-            App Development
+            Documentation
           </Link>
           <Link className="text-muted hover:text-white" to="/">
-            UI Design
+            License
           </Link>
           <Link className="text-muted hover:text-white" to="/">
-            Consultation
-          </Link>
-          <Link className="text-muted hover:text-white" to="/">
-            Maintenance
+            Sitemap
           </Link>
         </div>
       </div>

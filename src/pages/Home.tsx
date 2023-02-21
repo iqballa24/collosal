@@ -39,10 +39,10 @@ const Home = () => {
           />
         </div>
       </section>
-      <section className="wrapper mb-16" data-aos="fade-up">
+      <section className="wrapper mb-16">
         <Features features={DATA.FEATURES} />
       </section>
-      <section className="wrapper mb-[130px]" data-aos="fade-right">
+      <section className="wrapper mb-[130px]">
         <Logos data={DATA.CLIENTS} />
       </section>
       <section className="wrapper flex flex-col md:flex-row items-center mb-[120px]">
@@ -51,7 +51,7 @@ const Home = () => {
           alt=""
           className="w-full md:w-6/12"
         />
-        <div className="w-full md:w-6/12" data-aos="zoom-in-up">
+        <div className="w-full md:w-6/12">
           <PageSection
             badge="HOW WE WORK?"
             title="Everything is well planned, well designed and developed wholeheartedly"
@@ -61,7 +61,7 @@ const Home = () => {
         </div>
       </section>
       <section className="wrapper flex flex-col-reverse md:flex-row items-center pb-[118px] mb-[118px]">
-        <div className="w-full md:6/12 flex flex-col gap-14" data-aos="zoom-in-up">
+        <div className="w-full md:6/12 flex flex-col gap-14">
           <PageSection
             badge="OUR TEAM"
             title="We're a team of designers, engineers and analysts"
@@ -84,7 +84,7 @@ const Home = () => {
         />
       </section>
       <section className="wrapper flex flex-col items-center gap-[71px] mb-[110px]">
-        <div className="w-full max-w-[517px] z-10" data-aos="zoom-in">
+        <div className="w-full max-w-[517px] z-10">
           <PageSection
             badge="PROJECTS"
             title="We have completed many amazing projects that you will not believe"

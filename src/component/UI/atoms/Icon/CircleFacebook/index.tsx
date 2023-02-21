@@ -1,6 +1,6 @@
 import React from 'react';
 
-const CircleFacebook: React.FC<{src: string}> = ({src}) => {
+const CircleFacebook = () => {
   return (
     <div className="w-[40px] h-[40px] rounded-full p-[10px] bg-white bg-opacity-5 hover:bg-primary cursor-pointer">
       <svg

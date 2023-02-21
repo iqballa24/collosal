@@ -2,7 +2,7 @@ import React from 'react';
 
 const SquareMail = () => {
   return (
-    <div className="w-fit p-[13px] rounded-[3px] flex justify-center items-center bg-white bg-opacity-5">
+    <div className="w-[70px] h-[70px] p-[13px] rounded-[3px] flex justify-center items-center bg-white bg-opacity-5">
       <svg
         width="30"
         height="30"

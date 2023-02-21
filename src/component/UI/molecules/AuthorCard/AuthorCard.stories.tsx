@@ -16,5 +16,5 @@ const Template: ComponentStory<typeof AuthorCard> = (args) => (
 export const Default = Template.bind({});
 
 Default.args = {
-  user: DATA.DATA_USER.user,
+  user: DATA.DATA_USER,
 };

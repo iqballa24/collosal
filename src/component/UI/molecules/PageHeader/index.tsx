@@ -8,7 +8,7 @@ import {
 type Props = {
   badge: string;
   title: string;
-  description: string;
+  description?: string;
   position: 'left' | 'center' | 'right';
 };
 
@@ -36,7 +36,7 @@ const PageHeader: React.FC<Props> = ({
     <div className={CLASSNAME.join(' ')}>
       <SectionBadge text={badge} />
       <PageTitle text={title} fontSize="4xl" />
-      <PageDescription text={description} />
+      {description && <PageDescription text={description} />}
     </div>
   );
 };

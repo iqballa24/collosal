@@ -1,6 +1,6 @@
 import React from 'react';
 
-const CircleTwitter: React.FC<{ src: string }> = ({ src }) => {
+const CircleTwitter = () => {
   return (
     <div className="w-[40px] h-[40px] rounded-full p-[10px] bg-white bg-opacity-5 hover:bg-primary cursor-pointer">
       <svg
