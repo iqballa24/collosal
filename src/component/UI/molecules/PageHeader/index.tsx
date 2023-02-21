@@ -18,14 +18,14 @@ const PageHeader: React.FC<Props> = ({
   description,
   position,
 }) => {
-  const CLASSNAME = ['flex flex-col w-full md:max-w-[601px] mx-auto'];
+  const CLASSNAME = ['flex flex-col w-full md:max-w-[601px]'];
 
   switch (position) {
     case 'left':
       CLASSNAME.push('text-left');
       break;
     case 'center':
-      CLASSNAME.push('text-center');
+      CLASSNAME.push('text-center mx-auto');
       break;
     case 'right':
       CLASSNAME.push('text-right');

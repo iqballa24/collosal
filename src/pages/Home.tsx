@@ -1,14 +1,15 @@
 import React from 'react';
 
 import { Buttons } from '@/component/UI/atoms';
-import { Logos, PageHeader } from '@/component/UI/molecules';
-import { Features } from '@/component/UI/organisms';
+import { Logos, PageHeader, PageSection } from '@/component/UI/molecules';
+import {
+  Features,
+  Projects,
+  Services,
+  Testimonials,
+} from '@/component/UI/organisms';
 
 import DATA from '@/constant';
-import PageSection from '@/component/UI/molecules/PageSection';
-import Projects from '@/component/UI/organisms/Projects';
-import Services from '@/component/UI/organisms/Services';
-import Testimonials from '@/component/UI/organisms/Testimonials';
 
 const Home = () => {
   return (
@@ -50,6 +51,7 @@ const Home = () => {
           src="./how-we-work-illustration.svg"
           alt=""
           className="w-full md:w-6/12"
+          loading="lazy"
         />
         <div className="w-full md:w-6/12">
           <PageSection
@@ -81,6 +83,7 @@ const Home = () => {
           src="./team-illustration.svg"
           alt=""
           className="w-full md:w-6/12"
+          loading="lazy"
         />
       </section>
       <section className="wrapper flex flex-col items-center gap-[71px] mb-[110px]">
@@ -91,7 +94,7 @@ const Home = () => {
             position="center"
           />
         </div>
-        <Projects data={DATA.PROJECTS} />
+        <Projects data={DATA.PROJECTS.slice(0, 2)} />
         <img
           src="./ellipse-green.svg"
           alt=""
@@ -123,7 +126,7 @@ const Home = () => {
         </div>
         <Services data={DATA.SERVICES} />
       </section>
-      <section className="flex flex-col items-center gap-[94px] mb-[106px]">
+      <section className="wrapper flex flex-col items-center gap-[94px] mb-[106px]">
         <div className="w-full max-w-[517px]">
           <PageSection
             badge="testimonial"

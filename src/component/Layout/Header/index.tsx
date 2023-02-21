@@ -1,5 +1,5 @@
 import React, { useState, Fragment, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink, useNavigate } from 'react-router-dom';
 import { RxHamburgerMenu } from 'react-icons/rx';
 
 import DATA from '@/constant';
@@ -7,6 +7,7 @@ import { Buttons } from '@/component/UI/atoms';
 import { Transition } from '@headlessui/react';
 
 const Header = () => {
+  const navigate = useNavigate();
   const [showNav, setShowNav] = useState(false);
   const [scrollY, setScrollY] = useState(false);
 
@@ -28,12 +29,13 @@ const Header = () => {
     >
       <div
         className={`${
-          scrollY
-            ? 'bg-blur'
-            : 'bg-white/5 md:bg-transparent md:py-0 md:px-0'
+          scrollY ? 'bg-blur' : 'bg-white/5 md:bg-transparent md:py-0 md:px-0'
         } flex flex-row justify-between py-4 px-8 rounded-md`}
       >
-        <div className="flex flex-row items-center gap-2">
+        <div
+          className="flex flex-row items-center gap-2"
+          onClick={() => navigate('/')}
+        >
           <img src="./logo.svg" alt="" />
           <span className="text-white text-2xl font-bold">Collosal.</span>
         </div>
@@ -44,7 +46,14 @@ const Header = () => {
                 key={menu.id}
                 className="text-white/80 hover:text-white transition whitespace-nowrap"
               >
-                <Link to={menu.path}>{menu.name}</Link>
+                <NavLink
+                  className={({ isActive }) =>
+                    isActive ? '!text-white font-bold' : ''
+                  }
+                  to={menu.path}
+                >
+                  {menu.name}
+                </NavLink>
               </li>
             ))}
           </ul>

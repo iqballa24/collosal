@@ -26,5 +26,5 @@ export const WithoutDescription = Template.bind({});
 
 WithoutDescription.args = {
   icon: <Figma />,
-  value: 'Key',
+  description: 'Value',
 };

@@ -7,7 +7,7 @@ type Props = {
 
 const Projects: React.FC<Props> = ({ data }) => {
   return (
-    <div className="flex flex-col md:flex-row gap-10 md:gap-5" data-aos="zoom-in">
+    <div className="flex flex-row justify-center gap-10 flex-wrap">
       {data.map((project) => (
         <ProjectCard
           key={project.id}

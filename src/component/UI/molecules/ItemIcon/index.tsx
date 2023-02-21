@@ -2,10 +2,10 @@ import React from 'react';
 
 const ItemIcon: React.FC<{
   icon: React.ReactNode;
-  value: string;
-  description?: string;
+  value?: string;
+  description: string;
 }> = ({ icon, value, description }) => {
-  return description ? (
+  return value ? (
     <div className="flex flex-row items-center gap-7">
       {icon}
       <div className="flex flex-col gap-[5px]">
@@ -16,7 +16,7 @@ const ItemIcon: React.FC<{
   ) : (
     <div className="flex flex-row items-center gap-[25px]">
       {icon}
-      <span className="text-white font-medium text-base">{value}</span>
+      <span className="text-white font-medium text-base">{description}</span>
     </div>
   );
 };

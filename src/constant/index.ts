@@ -31,7 +31,7 @@ const MENUS = [
   {
     id: 1,
     name: 'Services',
-    path: '/',
+    path: '/services',
   },
   {
     id: 2,
@@ -40,8 +40,8 @@ const MENUS = [
   },
   {
     id: 3,
-    name: 'Projects',
-    path: '/projects',
+    name: 'Project',
+    path: '/project',
   },
   {
     id: 4,
@@ -82,6 +82,16 @@ const PROJECTS = [
   },
   {
     id: 2,
+    title: 'The Desktop App Landing Page',
+    description: 'A landing page for desktop app',
+  },
+  {
+    id: 3,
+    title: 'The Mobile App Landing Page',
+    description: 'A landing page for mobile app',
+  },
+  {
+    id: 4,
     title: 'The Desktop App Landing Page',
     description: 'A landing page for desktop app',
   },

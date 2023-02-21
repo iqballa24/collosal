@@ -8,6 +8,7 @@ import ItemIcon from '@/component/UI/molecules/ItemIcon';
 import LabelIcon from '@/component/UI/molecules/LabelIcon';
 import Logos from '@/component/UI/molecules/Logos';
 import PageHeader from '@/component/UI/molecules/PageHeader';
+import PageSection from '@/component/UI/molecules/PageSection';
 import ProjectCard from '@/component/UI/molecules/ProjectCard';
 import SmallCard from '@/component/UI/molecules/SmallCard';
 import Socials from '@/component/UI/molecules/Socials';
@@ -25,6 +26,7 @@ export {
   LabelIcon,
   Logos,
   PageHeader,
+  PageSection,
   ProjectCard,
   SmallCard,
   Socials,

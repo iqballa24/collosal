@@ -6,7 +6,7 @@ const ProjectCard: React.FC<{ title: string; description: string }> = ({
   description,
 }) => {
   return (
-    <div className="flex flex-col h-full max-h-[636px]">
+    <div className="flex flex-col h-full max-h-[636px] mb-[70px]">
       <img src="./project-illustration.svg" alt="" className="w-full" />
       <div className="flex flex-col items-center text-center pt-10 px-[72px]">
         <span className="text-white text-xl font-bold leading-[34px] pb-[10px]">
