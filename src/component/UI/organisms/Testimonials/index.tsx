@@ -13,14 +13,13 @@ const Testimonials: React.FC<{ data: TestimonialCardTypes[] }> = ({ data }) => {
   return (
     <>
       <Swiper
-        initialSlide={2}
+        initialSlide={1}
         slidesPerView={1}
         spaceBetween={30}
         pagination={{
           clickable: true,
         }}
         modules={[Pagination]}
-        loop={true}
         speed={1000}
       >
         {data.map((testimoni, index) => (

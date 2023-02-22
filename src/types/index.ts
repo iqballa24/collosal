@@ -10,7 +10,7 @@ export type ButtonProps = {
 };
 
 export type SmallCardProps = {
-  icon: React.ReactNode;
+  icon: string;
   title: string;
   description: string;
 };

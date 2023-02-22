@@ -44,7 +44,7 @@ const Buttons: React.FC<ButtonProps> = ({
     case 'white':
       switch (style) {
         case 'solid':
-          CLASSNAME.push('bg-white text-dark hover:brightness-90');
+          CLASSNAME.push('bg-white text-dark hover:bg-primary hover:text-white');
           break;
         case 'light':
           CLASSNAME.push(

@@ -1,8 +1,9 @@
-import * as Icon from './Icon';
-import * as Typography from '@/component/UI/atoms/Typography';
-import Avatar from '@/component/UI/atoms/Avatar';
-import Buttons from './Buttons';
-import Tag from '@/component/UI/atoms/Tag';
-import TagName from '@/component/UI/atoms/TagName';
+import React from 'react';
 
-export { Buttons, Tag, TagName, Typography, Avatar, Icon };
+import * as Typography from '@/component/UI/atoms/Typography';
+const Avatar = React.lazy(() => import('@/component/UI/atoms/Avatar'));
+const Buttons = React.lazy(() => import('@/component/UI/atoms/Buttons'));
+const Tag = React.lazy(() => import('@/component/UI/atoms/Tag'));
+const TagName = React.lazy(() => import('@/component/UI/atoms/TagName'));
+
+export { Buttons, Tag, TagName, Typography, Avatar };

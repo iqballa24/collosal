@@ -1,4 +1,4 @@
-import { QuoteBadge } from '@/component/UI/atoms/Icon';
+import QuoteBadge from '@/assets/Quote-badge.svg';
 import React from 'react';
 
 const Avatar: React.FC<{
@@ -14,7 +14,7 @@ const Avatar: React.FC<{
       <img src={src} alt={alt} className={className.join(' ')} width={width} />
       {withQuote && (
         <div className="absolute bottom-0 -right-1">
-          <QuoteBadge />
+          <img src={QuoteBadge} alt="" className="w-[28px]" />
         </div>
       )}
     </div>

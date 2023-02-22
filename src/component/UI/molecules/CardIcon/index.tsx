@@ -1,7 +1,8 @@
+
 import LabelIcon from '@/component/UI/molecules/LabelIcon';
 import React from 'react';
 
-const CardIcon: React.FC<{ icon: React.ReactNode; label: string }> = ({
+const CardIcon: React.FC<{ icon: string; label: string }> = ({
   icon,
   label,
 }) => {

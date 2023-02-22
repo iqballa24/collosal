@@ -1,19 +1,21 @@
-import AuthorCard from '@/component/UI/molecules/AuthorCard';
-import Callout from '@/component/UI/molecules/Callout';
-import CardIcon from '@/component/UI/molecules/CardIcon';
-import ComboboxInput from '@/component/UI/molecules/Combobox';
-import FeatureCard from '@/component/UI/molecules/FeatureCard';
-import Input from '@/component/UI/molecules/Input';
-import ItemIcon from '@/component/UI/molecules/ItemIcon';
-import LabelIcon from '@/component/UI/molecules/LabelIcon';
-import Logos from '@/component/UI/molecules/Logos';
-import PageHeader from '@/component/UI/molecules/PageHeader';
-import PageSection from '@/component/UI/molecules/PageSection';
-import ProjectCard from '@/component/UI/molecules/ProjectCard';
-import SmallCard from '@/component/UI/molecules/SmallCard';
-import Socials from '@/component/UI/molecules/Socials';
-import TestimonialCard from '@/component/UI/molecules/TestimonialCard';
-import TextArea from '@/component/UI/molecules/TextArea';
+import React from 'react';
+
+const AuthorCard = React.lazy(() => import('@/component/UI/molecules/AuthorCard'));
+const Callout = React.lazy(() => import('@/component/UI/molecules/Callout'));
+const CardIcon = React.lazy(() => import('@/component/UI/molecules/CardIcon'));
+const ComboboxInput = React.lazy(() => import('@/component/UI/molecules/Combobox'));
+const FeatureCard = React.lazy(() => import('@/component/UI/molecules/FeatureCard'));
+const Input = React.lazy(() => import('@/component/UI/molecules/Input'));
+const ItemIcon = React.lazy(() => import('@/component/UI/molecules/ItemIcon'));
+const LabelIcon = React.lazy(() => import('@/component/UI/molecules/LabelIcon'));
+const Logos = React.lazy(() => import('@/component/UI/molecules/Logos'));
+const PageHeader = React.lazy(() => import('@/component/UI/molecules/PageHeader'));
+const PageSection = React.lazy(() => import('@/component/UI/molecules/PageSection'));
+const ProjectCard = React.lazy(() => import('@/component/UI/molecules/ProjectCard'));
+const SmallCard = React.lazy(() => import('@/component/UI/molecules/SmallCard'));
+const Socials = React.lazy(() => import('@/component/UI/molecules/Socials'));
+const TestimonialCard = React.lazy(() => import('@/component/UI/molecules/TestimonialCard'));
+const TextArea = React.lazy(() => import('@/component/UI/molecules/TextArea'));
 
 export {
   AuthorCard,
@@ -31,5 +33,5 @@ export {
   SmallCard,
   Socials,
   TestimonialCard,
-  TextArea
+  TextArea,
 };

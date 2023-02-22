@@ -33,10 +33,10 @@ const Header = () => {
         } flex flex-row justify-between py-4 px-8 rounded-md`}
       >
         <div
-          className="flex flex-row items-center gap-2"
+          className="flex flex-row items-center gap-2 cursor-pointer"
           onClick={() => navigate('/')}
         >
-          <img src="./logo.svg" alt="" />
+          <img src="/logo.svg" alt="" />
           <span className="text-white text-2xl font-bold">Collosal.</span>
         </div>
         <nav className="hidden md:flex my-auto">

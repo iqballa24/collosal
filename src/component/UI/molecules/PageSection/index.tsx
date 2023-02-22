@@ -1,5 +1,5 @@
 import {
-  PageDescription,
+  SectionDescription,
   PageTitle,
   SectionBadge,
 } from '@/component/UI/atoms/Typography';
@@ -22,7 +22,7 @@ const PageSection: React.FC<Props> = ({
     <div className={`flex flex-col text-${position} w-full mx-auto`}>
       <SectionBadge text={badge} />
       <PageTitle text={title} fontSize="3xl" />
-      {description && <PageDescription text={description} />}
+      {description && <SectionDescription text={description} />}
     </div>
   );
 };

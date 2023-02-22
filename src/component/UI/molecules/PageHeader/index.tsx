@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  PageDescription,
+  SectionDescription,
   PageTitle,
   SectionBadge,
 } from '@/component/UI/atoms/Typography';
@@ -36,7 +36,7 @@ const PageHeader: React.FC<Props> = ({
     <div className={CLASSNAME.join(' ')}>
       <SectionBadge text={badge} />
       <PageTitle text={title} fontSize="4xl" />
-      {description && <PageDescription text={description} />}
+      {description && <SectionDescription text={description} />}
     </div>
   );
 };

@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="relative wrapper flex flex-row flex-wrap w-full pt-[104px] pb-[65px] justify-between gap-10">
       <div className=" flex flex-col gap-[21px]">
         <div className="flex flex-row items-center gap-2">
-          <img src="./logo.svg" alt="" />
+          <img src="/logo.svg" alt="" />
           <span className="text-white text-2xl font-bold">Collosal.</span>
         </div>
         <div className="flex flex-col gap-3">
@@ -75,7 +75,7 @@ const Footer = () => {
         </div>
       </div>
       <img
-        src="./ellipse-green.svg"
+        src="/ellipse-green.svg"
         alt=""
         className="absolute top-0 left-20"
       />

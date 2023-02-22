@@ -15,7 +15,7 @@ const Layout = () => {
             <div className="wrapper relative">
               <Callout text="We've prepared everything, it's time for you to tell the problem" />
               <img
-                src="./ellipse-red.svg"
+                src="/ellipse-red.svg"
                 alt=""
                 className="absolute -top-10 right-24"
               />

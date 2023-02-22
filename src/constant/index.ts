@@ -3,7 +3,16 @@ import GithubLogo from '@/assets/GithubLogo.svg';
 import ForbesLogo from '@/assets/ForbesLogo.svg';
 import FacebookLogo from '@/assets/FacebookLogo.svg';
 import MicrosoftLogo from '@/assets/MicrosoftLogo.svg';
-import { SquareBox, SquareCode, SquareFigma } from '@/component/UI/atoms/Icon';
+import FigmaLogo from '@/assets/figma.svg';
+import ClockLogo from '@/assets/clock.svg';
+import CodeLogo from '@/assets/code.svg';
+import TrendingUpLogo from '@/assets/trending-up.svg';
+import LayoutLogo from '@/assets/layout.svg';
+import ZapLogo from '@/assets/zap.svg';
+import SquareFigma from '@/assets/square-figma.svg';
+import SquareDev from '@/assets/square-dev.svg';
+import SquareBox from '@/assets/square-box.svg';
+
 import { PricingCardTypes, TestimonialCardTypes } from '@/types';
 
 const DATA_USER = {
@@ -60,7 +69,7 @@ const FEATURES = [
   },
   {
     id: 2,
-    icon: SquareCode,
+    icon: SquareDev,
     title: 'Develop',
     description:
       'Transform design and write business logic here. Choose the technology you want.',
@@ -71,6 +80,50 @@ const FEATURES = [
     title: 'Ship',
     description:
       'After the work is complete, we will send the project and all its assets to you.',
+  },
+];
+
+const FEATURES_DEV = [
+  {
+    id: 1,
+    icon: FigmaLogo,
+    title: 'Design Files',
+    description:
+      'Projects are well designed using Figma. You will get the design file.',
+  },
+  {
+    id: 2,
+    icon: ClockLogo,
+    title: 'Same Day',
+    description:
+      'We don`t want you to wait long. Everything will be finished on the same day.',
+  },
+  {
+    id: 3,
+    icon: CodeLogo,
+    title: 'Quality Code',
+    description:
+      'Code written according to good practice is highly maintainable.',
+  },
+  {
+    id: 4,
+    icon: TrendingUpLogo,
+    title: 'SEO',
+    description:
+      'The website will appear on the first page of the search engine.',
+  },
+  {
+    id: 5,
+    icon: LayoutLogo,
+    title: 'Responsive Design',
+    description: 'Access the website on any device, don`t limit your visitors.',
+  },
+  {
+    id: 6,
+    icon: ZapLogo,
+    title: 'Blazing Fast',
+    description:
+      'A high speed website will not disappoint prospective customers.',
   },
 ];
 
@@ -157,12 +210,53 @@ const TESTIMONIALS: TestimonialCardTypes[] = [
   },
 ];
 
+const FAQ = [
+  {
+    id: 1,
+    question: 'How is the payment system?',
+    answer:
+      'If the project has agreed, you will pay an advance, and when the progress reaches 50% you will make a second payment, and when the progress is 100% you will pay it off.',
+  },
+  {
+    id: 2,
+    question: 'Can I consult first?',
+    answer:
+      'Of course you can consult us first. We are very happy to help your problems and provide our best solutions. You can contact us via the contact page.',
+  },
+  {
+    id: 3,
+    question: 'What if the project stops halfway?',
+    answer:
+      'We promise to always finish the project on time, if a problem occurs (because of our mistake), all payments will be refunded. And the project will be terminated.',
+  },
+  {
+    id: 4,
+    question: 'Does it include servers and domains?',
+    answer:
+      'You don`t need to think about anything else, we have everything prepared. You just need to check your progress and make sure the features you want are the right one.',
+  },
+  {
+    id: 5,
+    question: 'Will I get the source code?',
+    answer:
+      'When the project is 100% complete, all the resources, such as design files, analysis diagrams, source code, etc. will be provided to you. You don`t need to worry about this.',
+  },
+  {
+    id: 6,
+    question: 'Is there a warranty?',
+    answer:
+      '1 year warranty for our errors or mistakes. If you want to add a feature that is not included in the warranty, there is another fee per feature, and the price depends on the difficulty.',
+  },
+];
+
 export default {
   DATA_USER,
   MENUS,
   FEATURES,
+  FEATURES_DEV,
   CLIENTS,
   PROJECTS,
   SERVICES,
   TESTIMONIALS,
+  FAQ,
 };

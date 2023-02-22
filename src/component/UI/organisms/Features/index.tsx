@@ -4,7 +4,7 @@ import React from 'react';
 type Props = {
   features: {
     id: number;
-    icon: () => JSX.Element;
+    icon: string;
     title: string;
     description: string;
   }[];
@@ -12,13 +12,13 @@ type Props = {
 
 const Features: React.FC<Props> = ({ features }) => {
   return (
-    <div className="flex flex-col md:flex-row items-stretch gap-5">
+    <div className="flex flex-row flex-wrap justify-center items-stretch gap-5">
       {features.map((feature) => (
         <FeatureCard
           key={feature.id}
           title={feature.title}
           description={feature.description}
-          icon={<feature.icon />}
+          icon={feature.icon}
         />
       ))}
     </div>
