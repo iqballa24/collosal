@@ -1,6 +1,7 @@
 import React from 'react';
 
 const AuthorCard = React.lazy(() => import('@/component/UI/molecules/AuthorCard'));
+const BoxStatistics = React.lazy(()=>import('@/component/UI/molecules/BoxStatistics'));
 const Callout = React.lazy(() => import('@/component/UI/molecules/Callout'));
 const CardIcon = React.lazy(() => import('@/component/UI/molecules/CardIcon'));
 const ComboboxInput = React.lazy(() => import('@/component/UI/molecules/Combobox'));
@@ -11,6 +12,7 @@ const LabelIcon = React.lazy(() => import('@/component/UI/molecules/LabelIcon'))
 const Logos = React.lazy(() => import('@/component/UI/molecules/Logos'));
 const PageHeader = React.lazy(() => import('@/component/UI/molecules/PageHeader'));
 const PageSection = React.lazy(() => import('@/component/UI/molecules/PageSection'));
+const Particles = React.lazy(() => import('@/component/UI/molecules/Particles'));
 const ProjectCard = React.lazy(() => import('@/component/UI/molecules/ProjectCard'));
 const SmallCard = React.lazy(() => import('@/component/UI/molecules/SmallCard'));
 const Socials = React.lazy(() => import('@/component/UI/molecules/Socials'));
@@ -19,6 +21,7 @@ const TextArea = React.lazy(() => import('@/component/UI/molecules/TextArea'));
 
 export {
   AuthorCard,
+  BoxStatistics,
   Callout,
   CardIcon,
   ComboboxInput,
@@ -29,6 +32,7 @@ export {
   Logos,
   PageHeader,
   PageSection,
+  Particles,
   ProjectCard,
   SmallCard,
   Socials,

@@ -2,7 +2,7 @@ import React from 'react';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 
 import LabelIcon from '.';
-import FigmaIcon from '../../atoms/Icon/SquareFigma';
+import FigmaIcon from '@/assets/figma.svg';
 
 export default {
   title: 'Molecules/LabelIcon',
@@ -16,6 +16,6 @@ const Template: ComponentStory<typeof LabelIcon> = (args) => (
 export const Default = Template.bind({});
 
 Default.args = {
-  icon: <FigmaIcon />,
+  icon: FigmaIcon,
   label: 'Label Icon',
 };

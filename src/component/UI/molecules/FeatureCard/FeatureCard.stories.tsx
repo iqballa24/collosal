@@ -2,7 +2,7 @@ import React from 'react';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 
 import FeatureCard from '.';
-import FigmaIcon from '../../atoms/Icon/SquareFigma';
+import FigmaIcon from '@/assets/figma.svg';
 
 export default {
   title: 'Molecules/FeatureCard',
@@ -16,7 +16,7 @@ const Template: ComponentStory<typeof FeatureCard> = (args) => (
 export const Default = Template.bind({});
 
 Default.args = {
-  icon: <FigmaIcon />,
+  icon: FigmaIcon,
   title: 'Feature title',
   description: 'Feature description',
 };

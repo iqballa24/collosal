@@ -2,7 +2,7 @@ import React from 'react';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 
 import CardIcon from '.';
-import { SmartPhone } from '@/component/UI/atoms/Icon';
+import SmartPhone from '@/assets/smartphone.svg'
 
 export default {
   title: 'Molecules/CardIcon',
@@ -16,6 +16,6 @@ const Template: ComponentStory<typeof CardIcon> = (args) => (
 export const Default = Template.bind({});
 
 Default.args = {
-  icon: <SmartPhone />,
+  icon: SmartPhone,
   label: 'Label Icon',
 };

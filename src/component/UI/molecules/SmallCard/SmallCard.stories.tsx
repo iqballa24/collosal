@@ -2,7 +2,7 @@ import React from 'react';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 
 import SmallCard from '.';
-import { MousePointer } from '@/component/UI/atoms/Icon';
+import MousePointer from '@/assets/mouse-pointer.svg'
 
 export default {
   title: 'Molecules/SmallCard',
@@ -16,7 +16,7 @@ const Template: ComponentStory<typeof SmallCard> = (args) => (
 export const Default = Template.bind({});
 
 Default.args = {
-  icon: <MousePointer />,
+  icon: MousePointer,
   title: 'Card title',
   description: 'Card description',
 };
