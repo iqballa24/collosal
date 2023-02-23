@@ -8,7 +8,7 @@ const Layout = () => {
   return (
     <React.Fragment>
       <div className="w-full h-full before:absolute before:top-0 before:left-0 before:bg-[url('/Background.svg')] before:bg-cover before:h-full before:w-full  before:-z-10 before:blur-[175px]">
-        <div className="w-full h-full min-h-screen bg-dark/90 ">
+        <div className="w-full h-full min-h-screen bg-dark/90">
           <Header />
           <main>
             <Outlet />

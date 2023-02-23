@@ -1,5 +1,10 @@
-import PageHeader from '@/component/UI/molecules/PageHeader';
 import React from 'react';
+import { BoxStatistics, Logos, Particles } from '@/component/UI/molecules';
+import PageHeader from '@/component/UI/molecules/PageHeader';
+import PageSection from '@/component/UI/molecules/PageSection';
+
+import DATA from '@/constant';
+import Teams from '@/component/UI/organisms/Teams';
 
 const About = () => {
   return (
@@ -20,7 +25,28 @@ const About = () => {
           />
         </div>
       </section>
-      <section className=''></section>
+      <section className="wrapper flex flex-col gap-[90px] mb-[119px]">
+        <div className="w-full max-w-[507px] mx-auto">
+          <PageSection
+            badge="statistics"
+            title="In 3 years we reached 8 countries, 193 clients and earning $100k USD"
+            position="center"
+          />
+        </div>
+        <BoxStatistics />
+        <Logos data={DATA.CLIENTS} />
+      </section>
+      <section className="wrapper flex flex-col gap-[90px] mb-[119px]">
+        <div className="w-full max-w-[507px] mx-auto">
+          <PageSection
+            badge="our team"
+            title="Meet the team! All creative people are here"
+            position="center"
+          />
+        </div>
+        <Teams data={DATA.TEAMS} />
+        <Particles />
+      </section>
     </React.Fragment>
   );
 };

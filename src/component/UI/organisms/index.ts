@@ -1,7 +1,10 @@
+import React from 'react'
+
 import * as Form from '@/component/UI/organisms/Form';
-import Features from '@/component/UI/organisms/Features';
-import Projects from '@/component/UI/organisms/Projects';
-import Services from '@/component/UI/organisms/Services';
-import Testimonials from '@/component/UI/organisms/Testimonials';
+
+const Features = React.lazy(() => import('@/component/UI/organisms/Features'))
+const Projects = React.lazy(() => import('@/component/UI/organisms/Projects'))
+const Services = React.lazy(() => import('@/component/UI/organisms/Services'))
+const Testimonials = React.lazy(() => import('@/component/UI/organisms/Testimonials'))
 
 export { Features, Form, Projects, Services, Testimonials };

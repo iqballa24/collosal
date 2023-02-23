@@ -42,3 +42,9 @@ export type TestimonialCardTypes = {
   company: string;
   description: string;
 };
+
+export type TeamCardTypes = {
+  img: string;
+  name: string;
+  position: string;
+};

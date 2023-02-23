@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { PageHeader, PageSection } from '@/component/UI/molecules';
+import { PageHeader, PageSection, Particles } from '@/component/UI/molecules';
 import { SectionDescription } from '@/component/UI/atoms/Typography';
 import { Features } from '@/component/UI/organisms';
 
@@ -75,21 +75,7 @@ const ServiceDetail = () => {
             Do not hesitate to ask!
           </Link>
         </h3>
-        <img
-          src="/ellipse-green.svg"
-          alt=""
-          className="absolute -top-10 right-16 lg:right-48"
-        />
-        <img
-          src="/ellipse-purple.svg"
-          alt=""
-          className="absolute top-32 right-10 lg:right-32"
-        />
-        <img
-          src="/ellipse-red.svg"
-          alt=""
-          className="absolute top-5 left-24"
-        />
+        <Particles />
       </section>
     </React.Fragment>
   );

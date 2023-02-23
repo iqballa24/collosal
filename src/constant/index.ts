@@ -13,6 +13,13 @@ import SquareFigma from '@/assets/square-figma.svg';
 import SquareDev from '@/assets/square-dev.svg';
 import SquareBox from '@/assets/square-box.svg';
 
+import AlbertFloresImg from "@/assets/team/albert-flores.png";
+import AnnetteBlackImg from "@/assets/team/annette-black.png";
+import DarrelStewardImg from "@/assets/team/darrel-steward.png";
+import DevonLaneImg from "@/assets/team/devon-lane.png";
+import FloydMilesImg from "@/assets/team/floyd-miles.png";
+import MarvinMckinneyImg from "@/assets/team/marvin-mckinney.png";
+
 import { PricingCardTypes, TestimonialCardTypes } from '@/types';
 
 const DATA_USER = {
@@ -249,6 +256,45 @@ const FAQ = [
   },
 ];
 
+const TEAMS = [
+  {
+    id: 1,
+    name: 'Albert Flores',
+    position: 'Founder',
+    img: AlbertFloresImg
+  },
+  {
+    id: 2,
+    name: 'Devon Lane',
+    position: 'Chief Technology Officer',
+    img: DevonLaneImg
+  },
+  {
+    id: 3,
+    name: 'Darrell Steward',
+    position: 'UI Designer',
+    img: DarrelStewardImg
+  },
+  {
+    id: 4,
+    name: 'Marvin McKinney',
+    position: 'Software Engineer',
+    img: MarvinMckinneyImg
+  },
+  {
+    id: 5,
+    name: 'Floyd Miles',
+    position: 'System Analyst',
+    img: FloydMilesImg
+  },
+  {
+    id: 6,
+    name: 'Annette Black',
+    position: 'Project Manager',
+    img: AnnetteBlackImg
+  },
+];
+
 export default {
   DATA_USER,
   MENUS,
@@ -257,6 +303,7 @@ export default {
   CLIENTS,
   PROJECTS,
   SERVICES,
+  TEAMS,
   TESTIMONIALS,
   FAQ,
 };

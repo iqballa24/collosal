@@ -1,7 +1,9 @@
-import { SquareMail, SquarePhoneCall } from '@/component/UI/atoms/Icon';
+import React from 'react';
 import { ItemIcon, PageHeader } from '@/component/UI/molecules';
 import { Form } from '@/component/UI/organisms';
-import React from 'react';
+
+import SquarePhoneCall from '@/assets/square-phone.svg';
+import SquareMail from '@/assets/square-mail.svg';
 
 const Contact = () => {
   return (
@@ -14,12 +16,12 @@ const Contact = () => {
             position="left"
           />
           <ItemIcon
-            icon={<SquarePhoneCall />}
+            icon={SquarePhoneCall}
             value="phone"
             description="+62 1234 8921"
           />
           <ItemIcon
-            icon={<SquareMail />}
+            icon={SquareMail}
             value="Email"
             description="support@collosal.tld"
           />

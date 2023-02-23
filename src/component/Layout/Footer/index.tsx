@@ -17,19 +17,19 @@ const Footer = () => {
       <div className=" flex flex-col gap-[19px]">
         <h4 className="text-white text-sm font-medium">SERVICES</h4>
         <div className="flex flex-col gap-[10px]">
-          <Link className="text-muted hover:text-white" to="/">
+          <Link className="text-muted hover:text-white" to="/web-development">
             Web Development
           </Link>
-          <Link className="text-muted hover:text-white" to="/">
+          <Link className="text-muted hover:text-white" to="/app-development">
             App Development
           </Link>
-          <Link className="text-muted hover:text-white" to="/">
+          <Link className="text-muted hover:text-white" to="/ui-design">
             UI Design
           </Link>
-          <Link className="text-muted hover:text-white" to="/">
+          <Link className="text-muted hover:text-white" to="/consultation">
             Consultation
           </Link>
-          <Link className="text-muted hover:text-white" to="/">
+          <Link className="text-muted hover:text-white" to="/maintenance">
             Maintenance
           </Link>
         </div>
@@ -37,7 +37,7 @@ const Footer = () => {
       <div className=" flex flex-col gap-[19px]">
         <h4 className="text-white text-sm font-medium">COMPANY</h4>
         <div className="flex flex-col gap-[10px]">
-          <Link className="text-muted hover:text-white" to="/">
+          <Link className="text-muted hover:text-white" to="/about">
             About
           </Link>
           <Link className="text-muted hover:text-white" to="/contact">
@@ -46,30 +46,30 @@ const Footer = () => {
           <Link className="text-muted hover:text-white" to="/send-quote">
             Send Quote
           </Link>
-          <Link className="text-muted hover:text-white" to="/">
-            Privacy Police
-          </Link>
-          <Link className="text-muted hover:text-white" to="/">
+          <Link className="text-muted hover:text-white" to="/term-condition">
             Term of Service
           </Link>
-          <Link className="text-muted hover:text-white" to="/">
-            Jobs
+          <Link className="text-muted hover:text-white" to="/pricing">
+            Pricing
+          </Link>
+          <Link className="text-muted hover:text-white" to="/blog">
+            Blog
           </Link>
         </div>
       </div>
       <div className=" flex flex-col gap-[19px]">
         <h4 className="text-white text-sm font-medium">RESOURCES</h4>
         <div className="flex flex-col gap-[10px]">
-          <Link className="text-muted hover:text-white" to="/">
+          <Link className="text-muted hover:text-white" to="/support">
             Support
           </Link>
-          <Link className="text-muted hover:text-white" to="/">
+          <Link className="text-muted hover:text-white" to="/documentation">
             Documentation
           </Link>
-          <Link className="text-muted hover:text-white" to="/">
+          <Link className="text-muted hover:text-white" to="/license">
             License
           </Link>
-          <Link className="text-muted hover:text-white" to="/">
+          <Link className="text-muted hover:text-white" to="/sitemap">
             Sitemap
           </Link>
         </div>

@@ -1,6 +1,7 @@
 import React from 'react';
 
 const AuthorCard = React.lazy(() => import('@/component/UI/molecules/AuthorCard'));
+const BlogCard = React.lazy(()=>import('@/component/UI/molecules/BlogCard'));
 const BoxStatistics = React.lazy(()=>import('@/component/UI/molecules/BoxStatistics'));
 const Callout = React.lazy(() => import('@/component/UI/molecules/Callout'));
 const CardIcon = React.lazy(() => import('@/component/UI/molecules/CardIcon'));
@@ -21,6 +22,7 @@ const TextArea = React.lazy(() => import('@/component/UI/molecules/TextArea'));
 
 export {
   AuthorCard,
+  BlogCard,
   BoxStatistics,
   Callout,
   CardIcon,
