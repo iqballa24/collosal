@@ -16,7 +16,7 @@ const HowWeWork = () => {
       </section>
       <section className="wrapper flex flex-col md:flex-row items-center justify-between gap-10 mb-36">
         <img
-          src="/discuss-illustration.svg"
+          src="/discuss-illustration.png"
           alt=""
           className="w-full md:w-6/12 max-w-[401px] mx-auto"
           loading="lazy"

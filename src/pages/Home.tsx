@@ -80,7 +80,7 @@ const Home = () => {
           />
         </div>
         <img
-          src="./team-illustration.svg"
+          src="./team-illustration.png"
           alt=""
           className="w-full md:w-6/12"
           loading="lazy"

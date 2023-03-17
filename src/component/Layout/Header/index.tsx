@@ -13,7 +13,7 @@ const Header = () => {
 
   useEffect(() => {
     window.onscroll = () => {
-      if (window.scrollY > 150) {
+      if (window.scrollY > 300) {
         setScrollY(true);
       } else {
         setScrollY(false);
@@ -25,7 +25,7 @@ const Header = () => {
     <header
       className={`${
         scrollY ? 'fixed top-0 w-full z-50' : 'relative'
-      } px-8 lg:px-20 xl:px-52 pt-12 flex flex-col`}
+      } px-8 lg:px-20 xl:px-52 pt-12 flex flex-col transition ease-in-out`}
     >
       <div
         className={`${
